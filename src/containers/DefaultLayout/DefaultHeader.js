@@ -3,8 +3,9 @@ import { Link, NavLink } from 'react-router-dom';
 import { Badge, UncontrolledDropdown, DropdownItem, DropdownMenu, DropdownToggle, Nav, NavItem } from 'reactstrap';
 import PropTypes from 'prop-types';
 
-import { AppAsideToggler, AppNavbarBrand, AppSidebarToggler } from '@coreui/react';
-import logo from '../../assets/img/brand/logo.svg'
+import {  AppNavbarBrand, AppSidebarToggler } from '@coreui/react';
+// import logo from '../../assets/img/brand/logo.svg'
+import logo from '../../assets/img/brand/logowmsia5.png'
 import sygnet from '../../assets/img/brand/sygnet.svg'
 
 const propTypes = {
@@ -70,7 +71,7 @@ class DefaultHeader extends Component {
             </DropdownMenu>
           </UncontrolledDropdown>
         </Nav>
-        <AppAsideToggler className="d-md-down-none" />
+        {/* <AppAsideToggler className="d-md-down-none" /> */}
         {/*<AppAsideToggler className="d-lg-none" mobile />*/}
       </React.Fragment>
     );
