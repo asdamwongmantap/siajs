@@ -26,7 +26,8 @@ import { Alerts, Badges, Modals } from './Notifications';
 import { Login, Page404, Page500, Register } from './Pages';
 import { Colors, Typography } from './Theme';
 import Widgets from './Widgets';
-import Dataform from './Setup/Dataform';
+import {Dataform,ListJenisRekening,AddJenisRekening} from './Setup';
+import {Jurnalumum,AddJurnalUmum} from './Jurnal';
 export {
   Badges,
   Typography,
@@ -66,6 +67,9 @@ export {
   Breadcrumbs,
   Paginations,
   Dataform,
-
+  ListJenisRekening,
+  AddJenisRekening,
+  Jurnalumum,
+  AddJurnalUmum,
 };
 

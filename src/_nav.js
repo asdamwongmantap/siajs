@@ -25,8 +25,63 @@ export default {
             text: '',
           },
         },
+        {
+          name: 'Jenis Rekening',
+          url: '/setup/listjenisrekening',
+          icon: 'icon-settings',
+          badge: {
+            variant: 'info',
+            text: '',
+          },
+        },
         
       ],
+    },
+
+    {
+      name: 'Jurnal',
+      url: '/jurnal',
+      icon: 'icon-calculator',
+      children: [
+        {
+          name: 'Jurnal Umum',
+          url: '/jurnal/listjurnalumum',
+          icon: 'icon-settings',
+          badge: {
+            variant: 'info',
+            text: '',
+          },
+        },
+
+        {
+          name: 'Jurnal Kas Keluar',
+          url: '/jurnal/kaskeluar',
+          icon: 'icon-settings',
+          badge: {
+            variant: 'info',
+            text: '',
+          },
+        },
+        
+      ],
+    },
+    {
+      name: 'Posting',
+      url: '/posting',
+      icon: 'icon-calculator',
+      badge: {
+        variant: 'info',
+        text: '',
+      },
+    },
+    {
+      name: 'Laporan',
+      url: '/laporan',
+      icon: 'icon-calculator',
+      badge: {
+        variant: 'info',
+        text: '',
+      },
     },
     
   ],

@@ -19,7 +19,7 @@ import {
   Row,
 } from 'reactstrap';
 
-class Dataform extends Component {
+class AddJenisRekening extends Component {
   constructor(props) {
     super(props);
 
@@ -89,4 +89,4 @@ class Dataform extends Component {
   }
 }
 
-export default Dataform;
+export default AddJenisRekening;

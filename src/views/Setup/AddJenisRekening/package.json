@@ -1,0 +1,6 @@
+{
+  "name": "AddJenisRekening",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./AddJenisRekening.js"
+}

@@ -19,7 +19,7 @@ import {
   Row,
 } from 'reactstrap';
 
-class Dataform extends Component {
+class AddJurnalUmum extends Component {
   constructor(props) {
     super(props);
 
@@ -48,7 +48,7 @@ class Dataform extends Component {
           <Col xs="12" md="6">
             <Card>
               <CardHeader>
-                <strong>Basic Form</strong> Elements
+                <strong>Form Add Jurnal Umum</strong>
               </CardHeader>
               <CardBody>
                 <Form action="https://rest-api-example-go.herokuapp.com/people" method="post" encType="multipart/form-data" className="form-horizontal">
@@ -89,4 +89,4 @@ class Dataform extends Component {
   }
 }
 
-export default Dataform;
+export default AddJurnalUmum;
