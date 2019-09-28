@@ -45,34 +45,37 @@ class AddJenisRekening extends Component {
       <div className="animated fadeIn">
         
         <Row>
-          <Col xs="12" md="6">
+          <Col xs="12" md="8">
             <Card>
               <CardHeader>
-                <strong>Basic Form</strong> Elements
+                <strong>Tambah Jenis Rekening</strong>
               </CardHeader>
               <CardBody>
-                <Form action="https://rest-api-example-go.herokuapp.com/people" method="post" encType="multipart/form-data" className="form-horizontal">
+                <Form  method="post" encType="multipart/form-data" className="form-horizontal">
                   
                   <FormGroup row>
                     <Col md="3">
-                      <Label htmlFor="text-input">Firstname</Label>
+                      <Label htmlFor="text-input">Kode Jenis Rekening</Label>
                     </Col>
                     <Col xs="12" md="9">
-                      <Input type="text" id="firstname" placeholder="Text" name="firstname"/>
+                      <Input type="text" id="kd_jenisakun" placeholder="Text" name="kd_jenisakun"/>
                       <FormText color="muted">This is a help text</FormText>
                     </Col>
                   </FormGroup>
                   <FormGroup row>
                     <Col md="3">
-                      <Label htmlFor="text-input">Lastname</Label>
+                      <Label htmlFor="text-input">Desc Jenis Rekening</Label>
                     </Col>
                     <Col xs="12" md="9">
-                      <Input type="text" id="lastname" placeholder="Text" name="lastname"/>
+                      <Input type="text" id="desc_jenisakun" placeholder="Text" name="desc_jenisakun"/>
                       <FormText color="muted">This is a help text</FormText>
                     </Col>
                   </FormGroup>
                   
                   <FormGroup row>
+                  <Col md="3">
+                      &nbsp;
+                    </Col>
                   <Button type="submit" className="mr-1" color="primary"><i className="fa fa-dot-circle-o"></i> Submit</Button>
                   <Button type="reset" className="mr-1" color="danger"><i className="fa fa-ban"></i> Reset</Button>
                   </FormGroup>

@@ -1,8 +1,46 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Card, CardBody, CardGroup, Col, Container, Form, Input, InputGroup, InputGroupAddon, InputGroupText, Row } from 'reactstrap';
+import axios from "axios/index";
 
 class Login extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+        visible : false
+    }
+}
+
+state = {
+  // username: '',
+  Title: ''
+
+};
+
+postDataHandler = () => {
+  // const ID = "16";
+    const data = {
+        // username: this.state.username,
+        Title: this.state.Title
+    };
+    console.log(this.state.Title);
+    // const Firstname = data.firstname;
+    axios.post("http://localhost:5001/api/v1/todos/login", data)
+    // axios.post("https://rest-api-example-go.herokuapp.com/people", data)
+        .then(response => {
+            console.log(response);
+            if (response.data.statusaja === "sesuai"){
+              // alert("data sesuai");
+              window.location = "/dashboard"
+            }else{
+              // alert("data tidak sesuai");
+             
+              window.location.reload();
+            }
+            
+        });
+
+};
   render() {
     return (
       <div className="app flex-row align-items-center">
@@ -21,7 +59,9 @@ class Login extends Component {
                             <i className="icon-user"></i>
                           </InputGroupText>
                         </InputGroupAddon>
-                        <Input type="text" placeholder="Username" autoComplete="username" />
+                        <Input type="text" placeholder="Username" autoComplete="username" 
+                        value={this.state.Title} 
+                        onChange={(event) => this.setState({Title: event.target.value})}/>
                       </InputGroup>
                       <InputGroup className="mb-4">
                         <InputGroupAddon addonType="prepend">
@@ -33,7 +73,8 @@ class Login extends Component {
                       </InputGroup>
                       <Row>
                         <Col xs="6">
-                          <Button color="primary" className="px-4" href="/dashboard">Login</Button>
+                          <Button color="primary" className="px-4" 
+                          onClick={this.postDataHandler}>Login</Button>
                         </Col>
                         <Col xs="6" className="text-right">
                           <Button color="link" className="px-0">Forgot password?</Button>

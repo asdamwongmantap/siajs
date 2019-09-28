@@ -44,13 +44,9 @@ class ListJenisRekening extends Component {
           <CardBody>
             <BootstrapTable data={this.table} version="4" striped hover pagination search options={this.options}>
               {/* <TableHeaderColumn dataField="notransaksi" dataSort dataFormat={this.idFormat} >No. Transaksi</TableHeaderColumn> */}
-              <TableHeaderColumn isKey dataField="notransaksi"  >No. Transaksi</TableHeaderColumn>
-              <TableHeaderColumn  dataField="tanggal" dataSort>Tanggal</TableHeaderColumn>
-              <TableHeaderColumn dataField="descrek" dataSort>Deskripsi</TableHeaderColumn>
-              <TableHeaderColumn dataField="ket" dataSort>Keterangan</TableHeaderColumn>
-              <TableHeaderColumn dataField="debit" dataSort>Debit</TableHeaderColumn>
-              <TableHeaderColumn dataField="kredit" dataSort>Kredit</TableHeaderColumn>
-              <TableHeaderColumn dataField="status" dataSort>Status</TableHeaderColumn>
+              <TableHeaderColumn isKey dataField="kd_jenisakun"  >Kode Jenis Rekening</TableHeaderColumn>
+              <TableHeaderColumn  dataField="desc_jenisakun" dataSort>Jenis Rekening</TableHeaderColumn>
+              
             </BootstrapTable>
           </CardBody>
         </Card>
